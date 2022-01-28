@@ -3,6 +3,8 @@
  */
 package main;
 
+import java.util.Scanner;
+
 import common.Sort;
 
 /**
@@ -22,6 +24,11 @@ public class EjmploAutomoviles {
 		arregloAutos[2] = new Automovil("Toyota", "Corolla", 2015, 5);
 		arregloAutos[3] = new Automovil("Honda", "CRV", 2016, 2);
 		arregloAutos[4] = new Automovil("Nissan", "Sentra", 1992, 8);
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Presione Enter para continuar");
+		in.nextLine();
+		
 		
 		Sort mySort = new Sort(new CompareByYearDesc());
 		

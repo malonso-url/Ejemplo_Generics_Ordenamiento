@@ -29,12 +29,12 @@ public class Sort <T> {
 	 * @param myArray List of elements need to be sorted
 	 */
 	public void BubbleSort(T[] myArray) {
-		for (int i = 0; i < myArray.length - 1; i++) {
-			for (int j = i + 1; j < myArray.length; j++) {
-				if (myCompare.Compare(myArray[i], myArray[j]) > 0) {
-					T temp = myArray[i];
-					myArray[i] = myArray[j];
-					myArray[j] = temp;
+		for (int i = 0; i < myArray.length - 1; i++) {					// n
+			for (int j = i + 1; j < myArray.length; j++) {				// n
+				if (myCompare.Compare(myArray[i], myArray[j]) > 0) {    // 1
+					T temp = myArray[i];								// 1
+					myArray[i] = myArray[j];							// 1
+					myArray[j] = temp;									// 1
 				}
 			}
 		}
